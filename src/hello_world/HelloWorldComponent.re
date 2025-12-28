@@ -4,7 +4,7 @@ let style =
 [@react.component]
 let make = () =>
   <div>
-    <h1> {React.string("melange-opam-template")} </h1>
+    <h1> {React.string("Example01 -- Hello World ")} </h1>
     {["Hello " ++ World.name ++ "!", "This is ReasonReact!"]
      |> List.map(text =>
           <div key=text style>

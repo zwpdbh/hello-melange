@@ -1,9 +1,15 @@
 module App = {
   [@react.component]
   let make = () =>
-    <div style=ReactDOM.Style.make(~display="flex", ~flexDirection="column", ~gap="1rem", ())>
+    <div
+      style={ReactDOM.Style.make(
+        ~display="flex",
+        ~flexDirection="column",
+        ~gap="1rem",
+        (),
+      )}>
       <Hello_world.HelloWorldComponent />
-      <Hello_world.HelloWorldComponent />
+      <Examples.Counter />
     </div>;
 };
 
