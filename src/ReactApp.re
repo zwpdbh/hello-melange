@@ -10,6 +10,7 @@ module App = {
       )}>
       <Hello_world.HelloWorldComponent />
       <Examples.Counter />
+      <Examples.CelsiusConverter />
     </div>;
 };
 
