@@ -11,6 +11,7 @@ module App = {
       <Hello_world.HelloWorldComponent />
       <Examples.Counter />
       <Examples.CelsiusConverter />
+      <Order_confirmation.Index.App />
     </div>;
 };
 
