@@ -8,9 +8,12 @@ let make = (~items: t) => {
          acc +. Item.toPrice(order)
        );
 
+  let itemRows: array(React.element) =
+    items |> Js.Array.map(~f=item => <Item item />);
+
   <table>
     <tbody>
-      {items |> Js.Array.map(~f=item => <Item item />) |> React.array}
+      {itemRows |> React.array}
       <tr>
         <td> {React.string("Total")} </td>
         <td> {total |> Js.Float.toFixed(~digits=2) |> React.string} </td>
