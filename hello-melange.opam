@@ -13,6 +13,9 @@ depends: [
   "melange" {>= "4.0.0"}
   "reason-react" {>= "0.15.0"}
   "reason-react-ppx"
+  # The opam-check-npm-deps tool is specifically designed for Melange projects to verify that the npm packages 
+  # installed in your node_modules directory match the versions required by your opam packages. It checks the compatibility between
+  # the OCaml/Reason dependencies (managed by opam) and JavaScript dependencies (managed by npm).
   "opam-check-npm-deps" {with-dev-setup}
   "ocaml-lsp-server" {with-dev-setup}
   "dot-merlin-reader" {with-dev-setup}
