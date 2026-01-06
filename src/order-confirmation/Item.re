@@ -1,23 +1,16 @@
 type t =
   | Sandwich
-  | Burger;
+  | Burger
+  | Hotdog;
 
-let toPrice = t =>
-  switch (t) {
+let toPrice =
+  fun
   | Sandwich => 10.
   | Burger => 15.
-  };
+  | Hotdog => 5.;
 
 let toEmoji =
   fun
   | Sandwich => {js|🥪|js}
-  | Burger => {js|🍔|js};
-
-[@react.component]
-let make = (~item: t) =>
-  <tr>
-    <td> {item |> toEmoji |> React.string} </td>
-    <td>
-      {item |> toPrice |> Js.Float.toFixed(~digits=2) |> React.string}
-    </td>
-  </tr>;
+  | Burger => {js|🍔|js}
+  | Hotdog => {js|🌭|js};

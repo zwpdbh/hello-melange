@@ -23,4 +23,6 @@
  (libraries reason-react)
  (preprocess
   (pps melange.ppx reason-react-ppx))
- (modes melange))
+ (modes melange)
+ (melange.runtime_deps
+  (glob_files *.css)))
