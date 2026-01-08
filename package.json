@@ -13,8 +13,8 @@
     "format": "npm run format-check -- --auto-promote",
     "format-check": "npm run dune -- build @fmt",
     "watch": "npm run build -- --watch",
-    "bundle": "webpack --mode production --entry ./_build/default/src/output/src/ReactApp.js",
-    "serve": "webpack serve --open --mode development --entry ./_build/default/src/output/src/ReactApp.js"
+    "bundle": "webpack --mode production--config webpack.config.js",
+    "serve": "webpack serve --open --mode development --config webpack.config.js"
   },
   "scriptsComments": {
     "preinstall-opam": "# Sync opam database with upstream repositories: https://opam.ocaml.org/doc/Usage.html#opam-update",
