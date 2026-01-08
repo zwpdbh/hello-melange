@@ -5,7 +5,7 @@ module.exports = {
   entry: './_build/default/src/output/src/ReactApp.js',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
